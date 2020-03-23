@@ -14,9 +14,9 @@ public class Recipe {
     private String ingredients;
     private String directions;
     private String tips;
-    private Blob  picture;
+    private Byte[]  picture;
 
-    public Recipe(String title, String ingredients, String directions, String tips,Blob picture) {
+    public Recipe(String title, String ingredients, String directions, String tips,Byte[] picture) {
         this.ingredients = ingredients;
         this.directions = directions;
         this.tips = tips;
@@ -48,7 +48,7 @@ public class Recipe {
         return tips;
     }
 
-    public Blob getPicture() {
+    public Byte[] getPicture() {
         return picture;
     }
 }
