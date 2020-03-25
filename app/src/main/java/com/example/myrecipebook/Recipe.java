@@ -1,5 +1,6 @@
 package com.example.myrecipebook;
 
+import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -14,9 +15,9 @@ public class Recipe {
     private String ingredients;
     private String directions;
     private String tips;
-    private Byte[]  picture;
+    private String  picture;
 
-    public Recipe(String title, String ingredients, String directions, String tips,Byte[] picture) {
+    public Recipe(String title, String ingredients, String directions, String tips,String picture) {
         this.ingredients = ingredients;
         this.directions = directions;
         this.tips = tips;
@@ -48,7 +49,7 @@ public class Recipe {
         return tips;
     }
 
-    public Byte[] getPicture() {
+    public String getPicture() {
         return picture;
     }
 }
